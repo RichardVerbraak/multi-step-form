@@ -1,0 +1,52 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+
+  background: url("/public/bg-sidebar-desktop.svg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+
+  color: $white;
+  font-size: $default-fs;
+  text-transform: uppercase;
+
+  padding: 4rem 5rem;
+  row-gap: 4rem;
+
+  border-radius: $border-radius;
+
+  &__step {
+    display: flex;
+    gap: 2rem;
+
+    &--number {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      border: $white solid 2px;
+      border-radius: 50%;
+
+      height: 3.8rem;
+      width: 3.8rem;
+    }
+
+    // Holds title and subtext
+    &--container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &--sub {
+      font-size: 1.4rem;
+      color: $light-gray;
+    }
+
+    &--title {
+      font-weight: $bolder;
+    }
+  }
+}

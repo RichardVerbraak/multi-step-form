@@ -1,0 +1,59 @@
+.form {
+  padding: 6rem;
+
+  &__header {
+    margin-bottom: 5rem;
+
+    &--title {
+      color: $marine-blue;
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+    &--sub {
+      font-size: 1.8rem;
+      color: $cool-gray;
+    }
+  }
+
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    color: $marine-blue;
+    font-size: $default-fs;
+    font-weight: 400;
+
+    &--label {
+      font-weight: $bold;
+    }
+
+    &--input {
+      color: $marine-blue;
+      font-size: 1.6rem;
+      font-weight: $bolder;
+
+      border: 1px solid $light-gray;
+      border-radius: 1rem;
+
+      padding: 1.5rem 2rem;
+
+      &:focus,
+      &:active {
+        border-color: $pastel-blue;
+      }
+    }
+  }
+
+  &__button {
+    align-self: end;
+    padding: 1.5rem 2rem;
+    color: $white;
+    font-size: 1.6rem;
+    font-weight: $bolder;
+
+    border-radius: $border-radius;
+    border: none;
+    background-color: hsl(214, 72%, 32%);
+  }
+}
