@@ -1,8 +1,6 @@
 .form {
-  padding: 6rem;
-
   &__header {
-    margin-bottom: 5rem;
+    padding: 5rem 0rem;
 
     &--title {
       color: $marine-blue;
@@ -38,14 +36,23 @@
 
       padding: 1.5rem 2rem;
 
-      &:focus,
-      &:active {
-        border-color: $pastel-blue;
+      &:focus {
+        outline: none;
+        border-color: $marine-blue;
+      }
+
+      &::placeholder {
+        color: $cool-gray;
+        font-size: 1.4rem;
+        font-weight: $bolder;
       }
     }
   }
 
   &__button {
+    cursor: pointer;
+    margin-top: 7rem;
+
     align-self: end;
     padding: 1.5rem 2rem;
     color: $white;

@@ -54,6 +54,7 @@ const Form = () => {
             type="text"
             name="name"
             id="name"
+            placeholder="Full Name"
           />
 
           <label className="form__inputs--label" htmlFor="email">
@@ -64,6 +65,7 @@ const Form = () => {
             type="email"
             name="email"
             id="email"
+            placeholder="Email Address"
           />
 
           <label className="form__inputs--label" htmlFor="phone">
@@ -74,6 +76,7 @@ const Form = () => {
             type="number"
             name="phone"
             id="phone"
+            placeholder="e.g + 1 234 567 890"
           />
 
           <button className="form__button">Next Step</button>
