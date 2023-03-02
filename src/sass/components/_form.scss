@@ -1,16 +1,26 @@
 .form {
+  padding: 0rem 9rem 2rem 0rem;
+
+  align-self: flex-end;
+
   &__header {
-    padding: 5rem 0rem;
+    margin-bottom: 5rem;
 
     &--title {
       color: $marine-blue;
-      font-size: 4rem;
+      font-size: 3.5rem;
       margin-bottom: 1rem;
     }
     &--sub {
       font-size: 1.8rem;
       color: $cool-gray;
     }
+  }
+
+  &-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 
   &__inputs {
@@ -51,15 +61,15 @@
 
   &__button {
     cursor: pointer;
-    margin-top: 7rem;
+    margin-top: 5rem;
 
     align-self: end;
-    padding: 1.5rem 2rem;
+    padding: 1.8rem 3rem;
     color: $white;
     font-size: 1.6rem;
     font-weight: $bolder;
 
-    border-radius: $border-radius;
+    border-radius: 1rem;
     border: none;
     background-color: hsl(214, 72%, 32%);
   }
