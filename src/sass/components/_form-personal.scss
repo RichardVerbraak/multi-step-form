@@ -1,0 +1,41 @@
+.form-personal {
+  // FORM INPUT CONTAINER
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  color: $marine-blue;
+  font-size: $default-fs;
+  font-weight: 400;
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    &--label {
+      font-weight: $bold;
+    }
+
+    &--input {
+      color: $marine-blue;
+      font-size: 1.6rem;
+      font-weight: $bolder;
+
+      border: 1px solid $light-gray;
+      border-radius: 1rem;
+
+      padding: 1.5rem 2rem;
+
+      &:focus {
+        outline: none;
+        border-color: $marine-blue;
+      }
+
+      &::placeholder {
+        color: $cool-gray;
+        font-size: 1.6rem;
+        font-weight: $bold;
+      }
+    }
+  }
+}

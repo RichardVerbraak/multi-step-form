@@ -11,6 +11,12 @@ const Form = () => {
     });
   };
 
+  const prevPage = () => {
+    setStepId((prevStep) => {
+      return prevStep - 1;
+    });
+  };
+
   return (
     <main className="container">
       <div className="sidebar">
@@ -48,22 +54,18 @@ const Form = () => {
       </div>
 
       <div className="form">
-        <header className="form__header">
-          <h1 className="form__header--title">Personal Info</h1>
-          <p className="form__header--sub">
-            Please provide your name, email address, and phone number.
-          </p>
-        </header>
         {stepId === 1 && <Personal />}
         {stepId === 2 && <Plans />}
-        <div className="form__buttons">
-          <button className="btn form__button--back" onClick={() => nextPage()}>
+
+        {stepId !== 1 && (
+          <button className="btn form__button--back" onClick={() => prevPage()}>
             Go Back
           </button>
-          <button className="btn form__button--next" onClick={() => nextPage()}>
-            Next Step
-          </button>
-        </div>
+        )}
+
+        <button className="btn form__button--next" onClick={() => nextPage()}>
+          Next Step
+        </button>
       </div>
     </main>
   );
