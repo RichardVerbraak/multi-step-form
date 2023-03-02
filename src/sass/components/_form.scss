@@ -1,7 +1,10 @@
 .form {
-  padding: 0rem 9rem 2rem 0rem;
+  display: flex;
+  flex-direction: column;
 
-  align-self: flex-end;
+  align-self: center;
+
+  padding-right: 9rem;
 
   &__header {
     margin-bottom: 5rem;
@@ -53,24 +56,29 @@
 
       &::placeholder {
         color: $cool-gray;
-        font-size: 1.4rem;
-        font-weight: $bolder;
+        font-size: 1.6rem;
+        font-weight: $bold;
       }
     }
   }
 
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   &__button {
-    cursor: pointer;
-    margin-top: 5rem;
+    &--next {
+      color: $white;
+      background-color: hsl(214, 72%, 32%);
 
-    align-self: end;
-    padding: 1.8rem 3rem;
-    color: $white;
-    font-size: 1.6rem;
-    font-weight: $bolder;
+      padding: 1.8rem 3rem;
+      border-radius: 1rem;
+    }
 
-    border-radius: 1rem;
-    border: none;
-    background-color: hsl(214, 72%, 32%);
+    &--back {
+      color: $marine-blue;
+    }
   }
 }

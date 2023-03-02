@@ -1,0 +1,3 @@
+User clicks button if all valid -> other component gets rendered 
+
+Track active state by stepId and render component based on that id?
